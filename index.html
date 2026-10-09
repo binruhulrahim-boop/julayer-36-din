@@ -1,150 +1,490 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>জুলাইয়ের ৩৬ দিন | ইতিহাসের দলিল</title>
-<meta name="description" content="জুলাই-আগস্ট ২০২৪-এর ছাত্র-জনতার গণঅভ্যুত্থানের ঘটনাপ্রবাহ, দলিল, ছবি ও ঐতিহাসিক তথ্যের সংকলন।">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>জুলাইয়ের ৩৬ দিন - রায়হান বিন রুহুল</title>
+  
+  <!-- Google Fonts: Hind Siliguri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-navy: #0b192c;       /* গাঢ় নেভি ব্লু */
+      --secondary-blue: #1e3a8a;     /* রয়্যাল নেভি ব্লু */
+      --accent-blue: #2563eb;        /* উজ্জ্বল নীল */
+      --light-blue: #eff6ff;         /* হালকা নীল ব্যাকগ্রাউন্ড */
+      --card-bg: #ffffff;            /* কার্ড ব্যাকগ্রাউন্ড */
+      --text-main: #1e293b;          /* মূল টেক্সট */
+      --text-blue: #1d4ed8;          /* নীলাভ টেক্সট */
+      --border-color: #bfdbfe;       /* হালকা নীল বর্ডার */
+    }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:#101010;color:#eee;font-family:Arial,"Noto Sans Bengali",sans-serif;line-height:1.9}
-header{background:#171717;border-bottom:1px solid #333;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.logo{font-size:23px;font-weight:bold;color:#fff}
-.logo span{color:#e53935}
-nav{display:flex;flex-wrap:wrap;gap:18px}
-nav a{color:#ddd;text-decoration:none;font-size:14px}
-nav a:hover{color:#ff5252}
-.hero{padding:100px 7%;background:linear-gradient(110deg,#111 30%,#391010);border-bottom:1px solid #333}
-.tag{color:#ff6464;font-size:13px;letter-spacing:2px}
-.hero h1{font-size:clamp(35px,7vw,65px);line-height:1.35;margin:20px 0}
-.hero p{max-width:700px;color:#ccc;font-size:17px}
-.btn{display:inline-block;margin-top:25px;padding:11px 24px;background:#b71c1c;color:white;text-decoration:none;border-radius:4px}
-.container{max-width:1100px;margin:auto;padding:60px 22px}
-.section-title{font-size:29px;margin-bottom:12px}
-.section-intro{color:#aaa;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.card{padding:24px;background:#191919;border:1px solid #303030;border-radius:7px}
-.card h3{color:#ff6565;margin-bottom:10px}
-.card p{color:#bbb;font-size:15px}
-.date{font-size:12px;color:#ff7474;letter-spacing:1px}
-.timeline{border-left:2px solid #9d2727;margin:30px 0 0 8px;padding-left:25px}
-.event{margin-bottom:28px;position:relative}
-.event:before{content:"";position:absolute;left:-32px;top:10px;width:12px;height:12px;background:#ef5350;border-radius:50%}
-.event h3{font-size:19px}
-.event p{color:#bbb}
-.notice{padding:20px;border-left:3px solid #e53935;background:#1b1b1b;color:#ccc}
-footer{padding:35px 20px;text-align:center;background:#171717;border-top:1px solid #333;color:#999}
-footer strong{color:#eee}
-@media(max-width:600px){header{padding:18px 5%}.hero{padding:65px 6%}.container{padding:45px 18px}nav{gap:12px}}
-</style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Hind Siliguri', sans-serif;
+      background-color: var(--light-blue);
+      color: var(--text-main);
+      line-height: 1.8;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: var(--primary-navy);
+      color: #ffffff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-container img {
+      height: 48px;
+      width: 48px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--accent-blue);
+    }
+
+    .logo-container h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Hero Banner */
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary-navy), var(--secondary-blue));
+      color: white;
+      padding: 3.5rem 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+      border: 1px solid var(--border-color);
+    }
+
+    .hero h2 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #bfdbfe;
+    }
+
+    /* Content Sections */
+    section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+    }
+
+    section h2 {
+      color: var(--secondary-blue);
+      font-size: 1.8rem;
+      border-bottom: 3px solid var(--accent-blue);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section p {
+      color: var(--text-main);
+      text-align: justify;
+    }
+
+    /* Timeline Day Cards */
+    .day-card {
+      background-color: #f8fafc;
+      border-left: 5px solid var(--accent-blue);
+      padding: 1.2rem;
+      margin-bottom: 1.2rem;
+      border-radius: 0 8px 8px 0;
+      border: 1px solid var(--border-color);
+      border-left-width: 5px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .day-card:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 8px rgba(37, 99, 235, 0.1);
+    }
+
+    .day-card h3 {
+      font-size: 1.3rem;
+      color: var(--text-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .day-card p {
+      color: #334155;
+    }
+
+    /* Image Gallery & Features */
+    .image-box {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid var(--border-color);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .image-caption {
+      font-size: 0.95rem;
+      color: var(--secondary-blue);
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+
+    /* Author Section */
+    .author-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    @media (min-width: 640px) {
+      .author-wrapper {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    .author-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent-blue);
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+    }
+
+    .author-details h3 {
+      font-size: 1.6rem;
+      color: var(--primary-navy);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Review Form & Cards */
+    .review-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .review-form input, 
+    .review-form select, 
+    .review-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 1rem;
+      background-color: #f8fafc;
+      color: var(--text-main);
+    }
+
+    .review-form button {
+      background-color: var(--accent-blue);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .review-form button:hover {
+      background-color: var(--secondary-blue);
+    }
+
+    .review-card {
+      border-bottom: 1px solid var(--border-color);
+      padding: 1rem 0;
+    }
+
+    .review-card:last-child {
+      border-bottom: none;
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.3rem;
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      color: var(--text-blue);
+    }
+
+    .stars {
+      color: #f59e0b;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-navy);
+      color: #93c5fd;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      border-top: 3px solid var(--accent-blue);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 1.2rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-  <div class="logo">জুলাইয়ের <span>৩৬ দিন</span></div>
-  <nav>
-    <a href="#home">প্রচ্ছদ</a>
-    <a href="#timeline">ঘটনাপঞ্জি</a>
-    <a href="#documents">দলিল</a>
-    <a href="#sources">তথ্যসূত্র</a>
-    <a href="#author">লেখক</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <!-- লোগো ইমেজ (অনলাইন ফ্যালব্যাক সহ) -->
+      <img src="https://via.placeholder.com/100/0b192c/ffffff?text=Logo" alt="প্রকাশনা লোগো">
+      <h1>জুলাইয়ের ৩৬ দিন</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#ch1">অধ্যায় ১</a></li>
+        <li><a href="#ch2">অধ্যায় ২</a></li>
+        <li><a href="#ch3">অধ্যায় ৩</a></li>
+        <li><a href="#author">লেখক</a></li>
+        <li><a href="#reviews">রিভিউ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-<section class="hero" id="home">
-  <div class="tag">ইতিহাস • স্মৃতি • দলিল</div>
-  <h1>একটি সময়ের<br>ইতিহাস ও ঘটনাপ্রবাহ</h1>
-  <p>
-    ২০২৪ সালের জুলাই-আগস্টে বাংলাদেশের ছাত্র-জনতার
-    গণঅভ্যুত্থানের ঘটনাপ্রবাহ, মানুষের আত্মত্যাগ,
-    গুরুত্বপূর্ণ বিবৃতি ও ঐতিহাসিক দলিল সংরক্ষণের একটি উদ্যোগ।
-  </p>
-  <a class="btn" href="#timeline">ঘটনাপঞ্জি দেখো ↓</a>
-</section>
+  <!-- Main Content -->
+  <div class="container">
 
-<section class="container" id="timeline">
-  <h2 class="section-title">ঐতিহাসিক ঘটনাপঞ্জি</h2>
-  <p class="section-intro">গুরুত্বপূর্ণ দিন ও ঘটনাগুলো ধারাবাহিকভাবে জানো।</p>
+    <!-- Hero Banner -->
+    <div class="hero">
+      <h2>জুলাইয়ের ৩৬ দিন</h2>
+      <p>জুলাই গণঅভ্যুত্থান (২০২৪) ও বাংলাদেশের রাজনৈতিক পরিবর্তনের প্রামাণ্য ইতিহাস</p>
+    </div>
 
-  <div class="timeline">
-    <article class="event">
-      <div class="date">৫ জুন ২০২৪</div>
-      <h3>কোটা ব্যবস্থা নিয়ে আদালতের রায়</h3>
-      <p>সরকারি চাকরিতে কোটা-সংক্রান্ত হাইকোর্টের রায়কে কেন্দ্র করে শিক্ষার্থীদের মধ্যে নতুন করে অসন্তোষ তৈরি হয়।</p>
-    </article>
+    <!-- Chapter 1 -->
+    <section id="ch1">
+      <h2>অধ্যায় ১: ১৯৪৭ থেকে ২০০৯ (দেশ বিভাগ থেকে স্বৈরাচারের পুনরুত্থান)</h2>
+      <p>১৯৪৭ সালে দ্বি-জাতি তত্ত্বের ভিত্তিতে পাকিস্তান ও ভারত বিভক্ত হওয়ার পর থেকেই তৎকালীন পূর্ব বাংলা (পরবর্তীতে পূর্ব পাকিস্তান) রাজনৈতিক ও অর্থনৈতিক শোষণের শিকার হতে থাকে। ১৯৫২ সালের ভাষা আন্দোলন, ১৯৬৬ সালের ছয় দফা, ১৯৬৯ সালের গণঅভ্যুত্থান এবং ১৯৭০ সালের নির্বাচনের ধারাবাহিকতায় ১৯৭১ সালের মুক্তিযুদ্ধে লক্ষ প্রাণের বিনিময়ে স্বাধীন হয় বাংলাদেশ। স্বাধীনতা-উত্তর বাংলাদেশে ১৯৭৫ সালের রাজনৈতিক অস্থিরতা, সামরিক শাসন ও শাসনতান্ত্রিক সংকটের মধ্য দিয়ে দেশের রাজনীতি একাধিক মোড় নেয়। ১৯৯০ সালের স্বৈরাচারবিরোধী গণআন্দোলনের মাধ্যমে সংসদীয় গণতন্ত্র পুনঃপ্রতিষ্ঠিত হলেও রাজনৈতিক দলগুলোর মধ্যকার অবিশ্বাস ও সংঘাত অব্যাহত থাকে। ১৯৯৬ ও ২০০১ সালের সরকার পরিবর্তনের পর ২০০৬-২০০৭ সালের রাজনৈতিক সংকট এবং ১/১১-এর তত্ত্বাবধায়ক সরকারের হাত ধরে ২০০৮ সালের ২৯ ডিসেম্বর নবম জাতীয় সংসদ নির্বাচন অনুষ্ঠিত হয়। ২০০৯ সালের শুরুতে শেখ হাসিনার নেতৃত্বে আওয়ামী লীগ ক্ষমতায় আসীন হওয়ার মাধ্যমে দেশের ইতিহাসে এক নতুন রাজনৈতিক অধ্যায়ের সূচনা হয়।</p>
+    </section>
 
-    <article class="event">
-      <div class="date">১ জুলাই ২০২৪</div>
-      <h3>আন্দোলনের নতুন পর্যায়</h3>
-      <p>কোটা সংস্কারের দাবিতে ঢাকা বিশ্ববিদ্যালয়সহ বিভিন্ন শিক্ষাপ্রতিষ্ঠানে শিক্ষার্থীদের কর্মসূচি শুরু হয়।</p>
-    </article>
+    <!-- Chapter 2 -->
+    <section id="ch2">
+      <h2>অধ্যায় ২: ২০০৯ থেকে ২০২৪ (শাসনতান্ত্রিক ক্ষমতার অপব্যবহার ও পুঞ্জীভূত ক্ষোভ)</h2>
+      <p>২০০৯ সালে ক্ষমতায় আসার পরপরই বাংলাদেশের রাজনীতি ও বিচারব্যবস্থায় অভূতপূর্ব নানা ঘটনা ঘটতে থাকে। ২০০৯ সালের ফেব্রুয়ারি মাসে ঢাকার পিলখানায় বিডিআর সদর দপ্তরে ৫৭ জন সেনাকর্মকর্তাসহ ৭৪ জনের নৃশংস হত্যাকাণ্ড জাতিকে স্তব্ধ করে দেয়। পরবর্তী সময়ে ২০১১ সালে পঞ্চদশ সংশোধনীর মাধ্যমে তত্ত্বাবধায়ক সরকার ব্যবস্থা বাতিল করা হয়, যা দেশের নিবাচনী ব্যবস্থাকে সংকটময় করে তোলে। ২০১৩ সালের মে মাসে মতিঝিলের শাপলা চত্বরে হেফাজতে ইসলামের সমাবেশে গভীর রাতে চালানো অভিযান ও গণগ্রেপ্তার ব্যাপক বিতর্কের জন্ম দেয়। ২০১৪ সালের একতরফা ‘১৫১ আসন বিনা প্রতিদ্বন্দ্বিতায়’ জেতার নির্বাচন এবং ২০১৮ সালের রাতের আঁধারে অনুষ্ঠিত নির্বাচন গণতান্ত্রিক প্রক্রিয়ার ওপর মারাত্মক আঘাত হানে।</p>
+      <br>
+      <p>এই ১৫ বছরে ভারতীয় আগ্রাসন ও আধিপত্যবাদের বিরুদ্ধে গড়ে ওঠে নানা জনমত। ২০১৯ সালে ভারতের প্রধানমন্ত্রী নরেন্দ্র মোদির নীতির প্রতিবাদ এবং বাংলাদেশ-ভারত সম্পর্কের বৈষম্য নিয়ে সামাজিক যোগাযোগমাধ্যমে মতামত দেওয়ায় বুয়েটের মেধাবী ছাত্র আবরার ফাহাদকে পিটিয়ে হত্যা করে ক্ষমতাসীন দলের ছাত্রসংগঠন। ২০১৮ সালে শিক্ষার্থীরা নিরাপদ সড়ক ও কোটা সংস্কারের দাবিতে রাজপথে নামলেও তা দমন করা হয়। ২০২৪ সালের জানুয়ারিতে পুনরায় অনুষ্ঠিত হয় আরেকটি ‘ডামি নির্বাচন’। টানা দেড় দশকের ক্ষমতার অপব্যবহার, মুক্তচিন্তা দমন, ভোটাধিকার হরণ ও মেধা মূল্যায়নের অস্বীকৃতি দেশের তরুণ প্রজন্ম তথা সাধারণ জনতার ভেতরে ক্ষোভের আগুন জ্বালিয়ে তোলে, যা ২০২৪-এর গণঅভ্যুত্থানের ক্ষেত্র প্রস্তুত করে।</p>
+    </section>
 
-    <article class="event">
-      <div class="date">জুলাই–আগস্ট ২০২৪</div>
-      <h3>আন্দোলনের বিস্তার</h3>
-      <p>পরবর্তী সময়ে আন্দোলনের ধরন ও দাবি পরিবর্তিত হয়। বিভিন্ন স্থানে সংঘর্ষ, হতাহতের ঘটনা এবং রাজনৈতিক পরিস্থিতির বড় পরিবর্তন ঘটে।</p>
-    </article>
+    <!-- Chapter 3 -->
+    <section id="ch3">
+      <h2>অধ্যায় ৩: ৩৬ দিনের দৈনিক ইতিহাস - জুলাই গণঅভ্যুত্থান (২০২৪)</h2>
 
-    <article class="event">
-      <div class="date">৫ আগস্ট ২০২৪</div>
-      <h3>রাজনৈতিক পরিস্থিতির ঐতিহাসিক পরিবর্তন</h3>
-      <p>শেখ হাসিনা প্রধানমন্ত্রীর পদ ছেড়ে দেশত্যাগ করেন। বাংলাদেশের রাজনৈতিক ইতিহাসে দিনটি একটি গুরুত্বপূর্ণ মোড় হিসেবে চিহ্নিত হয়।</p>
-    </article>
+      <div class="day-card">
+        <h3>১ জুলাই: আন্দোলনের সূচনা ও নতুন প্ল্যাটফর্ম</h3>
+        <p>‘বৈষম্যবিরোধী ছাত্র আন্দোলন’ নামের অরাজনৈতিক প্ল্যাটফর্মটির আনুষ্ঠানিক আত্মপ্রকাশ ঘটে এই দিনে। ঢাকা বিশ্ববিদ্যালয়ের কেন্দ্রীয় গ্রন্থাগার থেকে আন্দোলনকারী তরুণেরা একতাবদ্ধ হয়ে হাইকোর্টের কোটা পুনর্বহাল সংক্রান্ত রায়ের বিরুদ্ধে রাস্তায় নামেন। শিক্ষার্থীদের দাবি ছিল সুস্পষ্ট—সরকারি চাকুরিতে বৈষম্যমূলক কোটা বাতিল করে মেধার পূর্ণ মূল্যায়ন নিশ্চিত করা।</p>
+      </div>
+
+      <div class="day-card">
+        <h3>২ জুলাই: ক্যাম্পাসের বাইরে প্রতিরোধের প্রচ্ছদ</h3>
+        <p>আন্দোলন ক্যাম্পাসের গণ্ডি পেরিয়ে রাজপথে নামতে শুরু করে। জাহাঙ্গীরনগর বিশ্ববিদ্যালয়ের শিক্ষার্থীরা ঢাকা-আরিচা মহাসড়ক অবরুদ্ধ করে দূরপাল্লার যানবাহন চলাচল স্তব্ধ করে দেন। অন্যদিকে ঢাকা বিশ্ববিদ্যালয় প্রাঙ্গণে হাজার হাজার শিক্ষার্থীর অংশগ্রহণে এক সুবিশাল পদযাত্রা অনুষ্ঠিত হয়।</p>
+      </div>
+
+      <div class="day-card">
+        <h3>৩ জুলাই: আন্দোলন ছড়িয়ে পড়া ও আঞ্চলিক রূপ</h3>
+        <p>রাজধানী ঢাকার উত্তাপ দ্রুত ছড়িয়ে পড়ে দেশের অন্যান্য প্রান্তেও। রাজশাহী বিশ্ববিদ্যালয়, চট্টগ্রাম বিশ্ববিদ্যালয় এবং সিলেট শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়ের তরুণেরা নিজ নিজ শহরের প্রধান প্রধান সড়কগুলো অবরোধ করেন।</p>
+      </div>
+
+      <!-- ইতিহাস সংশ্লিষ্ট ছবি -->
+      <div class="image-box">
+        <img src="
+
+http://googleusercontent.com/generated_image_content/0
+
+" alt="১৬ই জুলাই: বীর শহীদ আবু সাঈদ">
+        <div class="image-caption">১৬ই জুলাই: পুলিশের বুলেটের সামনে বুক পেতে দাঁড়িয়ে শহীদ আবু সাঈদের বীরত্বপূর্ণ আত্মত্যাগ</div>
+      </div>
+
+      <div class="day-card">
+        <h3>১৬ জুলাই: আবু সাঈদের বীরত্ব ও রক্তের বন্যা</h3>
+        <p>১৬ই জুলাই রচিত হয় আন্দোলনের সবচেয়ে বেদনাদায়ক অথচ ঐতিহাসিক অধ্যায়। রংপুর বেগম রোকেয়া বিশ্ববিদ্যালয়ের শিক্ষার্থী আবু সাঈদ দু হাত প্রসারিত করে বুক পেতে পুলিশের লাইভ বুলেটের সামনে একাকী দাঁড়িয়ে শাহাদাত বরণ করেন। এই বীরত্বপূর্ণ আত্মত্যাগের দৃশ্য সোশ্যাল মিডিয়ায় ছড়িয়ে পড়লে দেশে এক গণবিস্ফোরণ ঘটে।</p>
+      </div>
+
+      <div class="day-card">
+        <h3>৪ আগস্ট: সর্বাত্মক অসহযোগের প্রথম দিন ও রক্তক্ষয়ী লড়াই</h3>
+        <p>একদফা বাস্তবায়নে শুরু হয় ‘সর্বাত্মক অসহযোগ’ আন্দোলন। ৪ই আগস্ট পীর সাহেব চরমোনাই এর নেতৃত্বে প্রথম বিশাল মিছিল বের হয় এবং ইসলামী দল ও সাধারণ জনতার প্রতিরোধের রাজপথ উত্তাল হয়। সিরাজগঞ্জ, নরসিংদী, ঢাকা ও চট্টগ্রামে রক্তক্ষয়ী সংঘর্ষ ঘটে। একদিনেই শহীদ হন শতাধিক মানুষ।</p>
+      </div>
+
+      <div class="day-card">
+        <h3>৫ আগস্ট (৩৬শে জুলাই): লং মার্চ টু ঢাকা ও ঐতিহাসিক বিজয়</h3>
+        <p>আন্দোলনকারীদের ডাকা ‘লং মার্চ টু ঢাকা’ কর্মসূচিতে সাড়া দিয়ে লাখ লাখ মানুষ সান্ধ্য আইন ও সেনা ব্যারিকেড ভেঙে পায়ে হেঁটে ঢাকার দিকে ধেয়ে আসেন। শেখ হাসিনা পদত্যাগ করে ভারতে পালিয়ে যেতে বাধ্য হন। স্বৈরাচারের অবসান ঘটে এবং রাজপথে ছাত্র-জনতা বিজয়ের উল্লাসে মেতে ওঠে। ইতিহাসের পাতায় এই দিনটি অমর হয়ে যায় ‘৩৬শে জুলাই’ হিসেবে।</p>
+      </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author">
+      <h2>লেখক পরিচিতি</h2>
+      <div class="author-wrapper">
+        <!-- লেখক ছবি -->
+        <img class="author-img" src="https://via.placeholder.com/200/1e3a8a/ffffff?text=Raihan+Bin+Ruhul" alt="রায়হান বিন রুহুল">
+        <div class="author-details">
+          <h3>রায়হান বিন রুহুল</h3>
+          <p>২০০৮ সালে ময়মনসিংহ জেলার গফরগাঁও থানায় জন্ম নেওয়া রায়হান বিন রুহুল একজন উদীয়মান লেখক ও তরুণ গবেষক। তরুণ প্রজন্মের সামাজিক দায়বদ্ধতা এবং দেশের ইতিহাসকে নিখুঁতভাবে উপস্থাপনের তাগিদ থেকেই তাঁর লেখালেখির পথচলা। ২০২৪ সালের জুলাই গণঅভ্যুত্থানের ইতিহাসকে একটি সত্য ও প্রামাণিক দলিলে রূপ দেওয়ার প্রচেষ্টা হিসেবে তিনি রচনা করেছেন "জুলাইয়ের ৩৬ দিন"। বর্তমানে তিনি পড়াশোনার পাশাপাশি স্বাধীন ইতিহাসচর্চা ও লেখালেখির সাথে যুক্ত আছেন।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Review Section -->
+    <section id="reviews">
+      <h2>পাঠকদের রিভিউ ও মতামত</h2>
+      
+      <!-- Review Form -->
+      <form class="review-form" id="reviewForm">
+        <input type="text" id="reviewerName" placeholder="আপনার নাম" required>
+        <select id="rating" required>
+          <option value="5">★★★★★ (৫/৫)</option>
+          <option value="4">★★★★☆ (৪/৫)</option>
+          <option value="3">★★★☆☆ (৩/৫)</option>
+          <option value="2">★★☆☆☆ (২/৫)</option>
+          <option value="1">★☆☆☆☆ (১/৫)</option>
+        </select>
+        <textarea id="reviewText" rows="4" placeholder="বইটি সম্পর্কে আপনার মতামত লিখুন..." required></textarea>
+        <button type="submit">রিভিউ জমা দিন</button>
+      </form>
+
+      <!-- Review List -->
+      <div id="reviewList">
+        <div class="review-card">
+          <div class="review-header">
+            <span class="reviewer-name">আবদুল্লাহ আল মামুন</span>
+            <span class="stars">★★★★★</span>
+          </div>
+          <p>জুলাই বিপ্লবের ৩৬ দিনের ঘটনা খুব নিখুঁত ও ধারাবাহিকভাবে তুলে ধরা হয়েছে। এটি আগামী প্রজন্মের জন্য এক অমূল্য দলিল।</p>
+        </div>
+      </div>
+    </section>
+
   </div>
-</section>
 
-<section class="container" id="documents">
-  <h2 class="section-title">দলিল ও গুরুত্বপূর্ণ তথ্য</h2>
-  <p class="section-intro">ইতিহাস বোঝার জন্য মূল নথি ও প্রত্যক্ষ সূত্র গুরুত্বপূর্ণ।</p>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; ২০২৪ "জুলাইয়ের ৩৬ দিন" | লেখক: রায়হান বিন রুহুল। সর্বস্বত্ব সংরক্ষিত।</p>
+  </footer>
 
-  <div class="grid">
-    <article class="card">
-      <h3>আদালতের রায়</h3>
-      <p>কোটা-সংক্রান্ত আদালতের সিদ্ধান্ত, পরবর্তী আদেশ ও সংশ্লিষ্ট নথি এখানে সংরক্ষণ করা হবে।</p>
-    </article>
+  <!-- JavaScript for Interactive Review System -->
+  <script>
+    document.getElementById('reviewForm').addEventListener('submit', function(e) {
+      e.preventDefault();
 
-    <article class="card">
-      <h3>সরকারি বিবৃতি</h3>
-      <p>সরকার, প্রশাসন ও সংশ্লিষ্ট কর্তৃপক্ষের প্রকাশিত বক্তব্য ও বিজ্ঞপ্তি।</p>
-    </article>
+      const name = document.getElementById('reviewerName').value;
+      const rating = document.getElementById('rating').value;
+      const text = document.getElementById('reviewText').value;
 
-    <article class="card">
-      <h3>ছাত্র-জনতার বক্তব্য</h3>
-      <p>আন্দোলনকারীদের প্রকাশিত বিবৃতি, ঘোষণাপত্র ও যাচাইযোগ্য বক্তব্য।</p>
-    </article>
-  </div>
-</section>
+      let starsText = '';
+      for (let i = 0; i < 5; i++) {
+        starsText += (i < rating) ? '★' : '☆';
+      }
 
-<section class="container" id="sources">
-  <h2 class="section-title">তথ্যসূত্র ও যাচাই</h2>
-  <div class="notice">
-    এই ওয়েবসাইটে প্রকাশিত প্রতিটি ঐতিহাসিক তথ্যের সঙ্গে সম্ভব হলে
-    মূল নথি, প্রকাশের তারিখ ও নির্ভরযোগ্য সূত্র যুক্ত করা হবে।
-    যাচাই করা তথ্য, অভিযোগ এবং বিতর্কিত বিবরণকে আলাদাভাবে উপস্থাপন
-    করা হবে, যাতে পাঠক নিজেও তথ্য যাচাই করতে পারেন।
-  </div>
-</section>
+      const reviewCard = document.createElement('div');
+      reviewCard.className = 'review-card';
+      reviewCard.innerHTML = `
+        <div class="review-header">
+          <span class="reviewer-name">${escapeHTML(name)}</span>
+          <span class="stars">${starsText}</span>
+        </div>
+        <p>${escapeHTML(text)}</p>
+      `;
 
-<section class="container" id="author">
-  <h2 class="section-title">লেখক পরিচিতি</h2>
-  <div class="card">
-    <h3>রায়হান বিন রুহুল</h3>
-    <p>লেখক ও ইতিহাস-সংকলক।</p>
-    <p>বই: জুলাইয়ের ৩৬ দিন</p>
-    <p>প্রকাশক: দুর্বার প্রকাশনী</p>
-  </div>
-</section>
-</main>
+      document.getElementById('reviewList').prepend(reviewCard);
 
-<footer>
-  <p><strong>জুলাইয়ের ৩৬ দিন</strong></p>
-  <p>ইতিহাস সংরক্ষণ, তথ্য যাচাই ও গবেষণার একটি উদ্যোগ।</p>
-  <p>© ২০২৬ রায়হান বিন রুহুল</p>
-</footer>
+      // Form reset
+      document.getElementById('reviewForm').reset();
+    });
+
+    function escapeHTML(str) {
+      return str.replace(/[&<>'"]/g, 
+        tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag] || tag)
+      );
+    }
+  </script>
 
 </body>
 </html>
